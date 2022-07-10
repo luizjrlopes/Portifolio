@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<title>Portifólio</title>
-<meta charset="UTF-8">
-<link>
+
 
 <head>
 
-
+    <title>Portifólio</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css" type="text/css">
 </head>
 
 <body>
@@ -21,11 +21,13 @@
             </ul>
         </nav>
         <h1>Luiz Júnior Lopes</h1>
+        <img src="https://media-exp1.licdn.com/dms/image/C4E03AQGliD1SApo34A/profile-displayphoto-shrink_400_400/0/1654798935127?e=1663200000&v=beta&t=8qegn08FZACYbwFpfCSyYS2iQoO7sJRl65cDJ3j0sPU"
+            alt="Luiz Júnior">
     </header>
     <main>
         <section>
-            <article>
-                <h2 id="certificacoes">Certificações</h2>
+            <article class="sec" id="certificacoes">
+                <h2>Certificações</h2>
                 <li> <img
                         src="https://docs.microsoft.com/pt-BR/media/learn/certification/badges/microsoft-certified-fundamentals-badge.svg"
                         width="50px" height="50px" alt="Exam AZ-900: Microsoft Azure Fundamentals">
@@ -36,8 +38,8 @@
                 </li>
 
             </article>
-            <article>
-                <h2 id="publicacoes">Pubicações</h2>
+            <article class="sec" id="publicacoes">
+                <h2>Pubicações</h2>
                 <h3>LETRAMENTO EM SAÚDE: APLICATIVO "PODEROSA NO PARTO" DE EDUCAÇÃO PARA PESSOAS GESTANTES / HEALTH
                     LITERACY: "POWERFUL IN CHILDBIRTH" EDUCATION APPLICATION FOR PREGNANT WOMEN
                 </h3>
@@ -66,8 +68,8 @@
                     gestantes.
                 </p>
             </article>
-            <article>
-                <h2 id="habilidades">Habilidades</h2>
+            <article class="sec" id="habilidades">
+                <h2>Habilidades</h2>
 
                 <ul>
 
@@ -104,6 +106,12 @@
         </section>
         <aside>
             <h2>Videos em destaque</h2>
+            <iframe id="video" src="https://www.youtube.com/embed/sEmlfyYGJRc" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+
+            </iframe>
         </aside>
 
     </main>
@@ -126,16 +134,7 @@
                 <label for="url">Website</label>
                 <input type="url" id="url" placeholder="Digite seu website">
             </fieldset>
-            <fieldset>
-                <select>
-                    <option>Item 01</option>
-                    <option>Item 02</option>
-                    <option>Item 03</option>
-                    <option>Item 04</option>
-                </select>
-                <textarea rows="10" col="10"></textarea>
 
-            </fieldset>
             <input type="submit" value="Enviar mensagem" id="submit">
         </form>
 
