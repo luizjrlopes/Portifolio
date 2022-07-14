@@ -5,9 +5,40 @@
     margin: 0px;
 
 }
+h1,
+h2 {
+    text-align: center;
+    font-family: 'Fredoka', sans-serif;
+}
+
+
+h2{
+    font-size: 2em;
+    padding-bottom: 20px;
+}
+h3{
+    font-size: 16px;
+    font-family: 'Fredoka', sans-serif; 
+}
 
 a {
-    background-color: silver;
+    background-color: #E5E5E5;
+    margin-left: 0px;
+    transition-property:background-color, color;
+    transition-duration: 0,5s;
+}
+
+a:hover, a:focus{
+background-color: silver;
+color: black;
+
+}
+p{
+    font-size: 12px;
+}
+li{
+    display: inline;
+    margin-right: 20px;
 }
 
 body {
@@ -34,41 +65,227 @@ aside {
 }
 
 header {
-    background-color: silver;
+    background-color:#E5E5E5;
     padding: 20px;
-}
-
-h1,
-h2 {
     text-align: center;
-    font-family: 'Fredoka', sans-serif;
 }
 
-article#certificacoes {
+article {
 
+    padding: 50px;
+}
+
+article#certificacoes ul{
+   margin-left: 50px;
+    margin-bottom: 20px;
+    
+}
+article#certificacoes li{
+    display: flex;
+    align-items: center;
+}
+article#certificacoes ul li h3 a{
+    background-color: white;
+    color: black;
+    font-size: 25px;
+    transition-property: color;
+    transition-duration: 0,5s;
+}
+article#certificacoes ul li h3 a:hover,
+article#certificacoes ul li h3 a:focus{
+    color: #4387D8;
+   
+}
+article#certificacoes img{
+    width:100px;
+    height:100px;
+    margin-right: 20px;
+}
+
+
+
+article#habilidades {
+    display: flex;
+    text-decoration: none;
+    background-color: #4387D8;
+    height: 150px;
+    align-items: center;
+}
+#titulohabilidades{
+    text-align: center;
+    color: white;
+    margin-right: 20px;
+    
+}
+
+#logoshabilidades{
+    display: flex;
+    width: 100%;
+   align-items: space-between;
+   justify-content: space-between;
+    
+}
+#logoshabilidades li{
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
+    width: 80px;
+    height: 80px;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    color: #4387D8;
 }
+
+
 
 article#publicacoes {
     background-color: #E5E5E5;
-    padding: 20px;
-    line-height: 30px;
+    
 }
 
-article#habilidades {
+article#artigos {
     background-color: #4387D8;
-    padding: 20px;
+    
+}
+
+article#artigos ul{
+    display: flex;
+    margin-bottom: 20px;
+  
+}
+article#artigos img{
+    margin-right: 20px;
+}
+article#artigos h2{
+    color: white;
+}
+article#artigos ul li h3 a{
+    background-color: #4387D8;
+    color: black;
+    transition-property: color;
+    transition-duration: 0,5s;
+}
+article#artigos ul li h3 a:hover,
+article#artigos ul li h3 a:focus{
+    color: white;
+   
 }
 
 aside {
-    background-color: #315E93;
+    background-color: #E5E5E5;
+    border: 1px solid black;
+    box-shadow: inset;
 }
 
 footer {
-    background-color: #4387d8;
+    background-color: #E5E5E5;
     padding: 20px;
 }
 
+#fieldset1{
+    grid-area: fieldset1;
+}
+#fieldset2{
+    grid-area: fieldset2;
+}
+#submit{
+    grid-area: submit;
+    margin-top: 20px;
+    
+}
+label[for="nome"]{
+    grid-area: labnome;
+    margin-bottom: 10px;
+ 
+}
+#nome{
+    grid-area: nome;
+    margin-bottom: 10px;
+    height: 30px;
+    
+
+}
+label[for="email"]{
+    grid-area: labmail;
+    margin-bottom: 10px;
+}
+#email{
+    grid-area: email;
+    height: 30px;
+ 
+
+}
+
+label[for="tel"]{
+    grid-area: labtel;
+    margin-bottom: 10px;
+}
+#tel{
+    grid-area: tel;
+    margin-bottom: 10px;
+    height: 30px;
+
+}
+label[for="url"]{
+    grid-area: laburl;
+    margin-bottom: 10px;
+}
+#url{
+    grid-area: url;
+    height: 30px;
+ 
+
+}
+
+fieldset{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#fieldset1{
+    display: grid;
+    grid-template-areas:
+    "labnome nome"
+    "labmail email"
+    ;
+    grid-template-columns: 70px 1fr;
+    background-color: rgb(241, 241, 241);
+    border: 1px solid black;
+    padding: 20px;
+    color: black;
+}
+#fieldset2{
+    display: grid;
+    grid-template-areas:
+    "labtel tel"
+    "laburl url"
+    ;
+    grid-template-columns: 70px 1fr;
+    background-color: rgb(241, 241, 241);
+    border: 1px solid black;
+    padding: 20px;
+    color: black;
+}
+
+#fieldset1 legend, #fieldset2 legend{
+    background-color: rgb(0, 80, 155);
+    color:white;
+    width: 100%;
+    padding: 10px;
+}
+
+#submit {
+    background-color: rgb(0, 80, 155);
+    color:white;
+    width: 40%;
+    padding: 10px;
+    margin-left: 30%;
+
+}
 @media screen and (max-width:1024px) {
     main {
         display: block;
@@ -77,3 +294,11 @@ footer {
 }
 
 @media screen and (max-width:840px) {}
+
+nav{
+    position: absolute;
+    animation-name: anima;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+
+}
