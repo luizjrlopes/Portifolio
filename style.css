@@ -29,7 +29,7 @@ h3{
 li{
     display: inline;
     
-    width: 180px;
+    
 }
 li a {
     text-decoration: none;
@@ -331,15 +331,12 @@ fieldset{
 
 }
 
+
 @media screen and (max-width:1024px) {
     main {
         display: block;
     }
 
-}
-
-@media screen and (max-width:840px) {
-   
         .nav-links {
             text-decoration: none;
             display: flex;
