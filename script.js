@@ -23,4 +23,3 @@ navLinks.addEventListener("click", () => {
 
 });
 
-
