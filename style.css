@@ -47,8 +47,7 @@ nav ul a {
     text-decoration: none;
     display: block;
 }
-
-#links a{
+ul#links{
     font-weight: 700;   
     font-size: 14px;
     color:var(--title);
@@ -56,7 +55,9 @@ nav ul a {
     transition: 0.2s;
 
 }
-#links a:hover{
+
+
+ul#links a:hover{
   filter: opacity(0.8);
 
 }
@@ -68,7 +69,7 @@ nav ul a {
     max-width: var(--container);
     margin: 0 auto;
 
-    height: calc(100vh -(40px + 29px)); /* altura do header menos altura da tela */
+    height: calc(100vh - (40px + 29px)); /* altura do header menos altura da tela */
 
     display: flex;
     align-items: center;
@@ -118,9 +119,11 @@ nav ul a {
     margin-left: 95px;
 }
 
-#certificacao-item{
+
+#conteudo-certificacao li.certificacao-item{
     display: flex;
     font-family: Lato;
+    padding-bottom: 20px;
 }
 ul#lista-certificacao{
    
@@ -150,6 +153,59 @@ li.certificacao-item p.onde{
    
 }
 li.certificacao-item p.quando{
+   font-size: 14px; 
+   color: var(--text);
+   
+}
+#artigo{
+    background-color: var(--tertiary);
+}
+
+#conteudo-artigo{
+    max-width: var(--container);
+    margin: 0 auto;
+    padding: 80px 0px;
+}
+
+#conteudo-artigo h2{
+    font-size: 48px;
+    font-weight: 700;
+    margin-left: 95px;
+}
+
+#conteudo-artigo li.artigo-item{
+    display: flex;
+    font-family: Lato;
+    padding-bottom: 20px;
+}
+ul#lista-artigo{
+   
+    flex-direction: column;
+    margin-top: 37px;
+}
+
+#artigo-item:not(:first-child) {
+    margin-top:45px;
+}
+
+li.artigo-item div{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left:24px;
+ 
+}
+li.artigo-item h3{
+   font-size: 24px; 
+   font-weight: 700;
+   
+}
+li.artigo-item p.onde{
+   font-size: 16px; 
+   color: var(--title);
+   
+}
+li.artigo-item p.quando{
    font-size: 14px; 
    color: var(--text);
    
@@ -271,7 +327,7 @@ article.publicacao div p{
 }
 
 footer{
-    height: 100vh;
+    
     background-color: var(--primary);
     
 }
@@ -279,7 +335,7 @@ footer div#conteudo-footer{
     max-width: var(--container);
     margin: 0 auto;
     height: 100%;
-
+    padding: 80px 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
