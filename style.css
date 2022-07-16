@@ -45,22 +45,26 @@ header ul li:not(:first-child){
 
 nav ul a {
     text-decoration: none;
+    color:var(--primary);
     display: block;
 }
-ul#links{
+
+ul#links {
     font-weight: 700;   
     font-size: 14px;
     color:var(--title);
     text-transform: uppercase;
-    transition: 0.2s;
+    transition: 0.5s;
 
 }
 
 
-ul#links a:hover{
+#links li a:hover, ul#links a:focus {
   filter: opacity(0.8);
 
+
 }
+
 #redes img {
     display: block;
 }
@@ -130,6 +134,12 @@ ul#lista-certificacao{
     flex-direction: column;
     margin-top: 37px;
 }
+ul#lista-certificacao a{
+   
+    color:var(--primary);
+}
+
+
 
 #certificacao-item:not(:first-child) {
     margin-top:45px;
@@ -182,6 +192,10 @@ ul#lista-artigo{
    
     flex-direction: column;
     margin-top: 37px;
+}
+ul#lista-artigo a{
+   
+    color:var(--primary);
 }
 
 #artigo-item:not(:first-child) {
@@ -249,11 +263,12 @@ ul#tecnologias li.tecnologia{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 185px;
     border-radius: 8px;
     background-color: var(--white);
     box-shadow: 0px 36px 20px -24px rgba(0, 0,0,0.2);
+   
    }
 li.tecnologia:not(:last-child) {
     margin-right:24px;
@@ -325,6 +340,70 @@ article.publicacao div p{
 
    margin-top: 16px;
 }
+
+
+section#formacoes{
+    background-color: var(--primary);
+}
+
+#conteudo-formacoes{
+    max-width: var(--container);    
+    margin: 0 auto;
+    padding: 154px 0;
+
+    display: flex;
+    align-items: center;
+}
+#conteudo-formacoes h2{
+ color: var(--white);
+ font-weight: 700;
+ font-size: 48px;
+}
+#conteudo-formacoes h2 span{
+ font-size: 24px;
+ display: block;
+}
+#conteudo-formacoes ul#cursos{
+ width: 90%;
+ margin-left: 49px;
+ display: flex;
+
+ overflow-x: auto;
+ white-space: nowrap;
+ 
+}
+
+ul#cursos li.curso{
+    width: 100%;
+    margin-left: 49px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 200px;
+    border-radius: 8px;
+    background-color: var(--white);
+    box-shadow: 0px 36px 20px -24px rgba(0, 0,0,0.2);
+   }
+li.curso:not(:last-child) {
+    margin-right:24px;
+}
+
+li.curso p{
+    font-family: Lato;
+    font-size:16px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    color: var(--primary);
+    margin-top: 8px;
+
+}
+
+
+
+
 
 footer{
     
