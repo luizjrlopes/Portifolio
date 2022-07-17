@@ -25,24 +25,10 @@ body{
     font-family: Raleway, sans-serif;
     min-width: 812px;
 }
-main {
-    display: grid;
-    grid-template-areas: "um dois";
-    grid-template-columns: auto 200px;
-   
 
-}
 
-#grid {
-    grid-area: um;
-}
 
-aside {
-    grid-area: dois;
-}
-#video {
-    width: 200px;
-}
+
 header {
     max-width: 100%;
     margin: 0 auto;
@@ -84,6 +70,7 @@ ul#links {
     width: 100%;
     display: flex;
     justify-content: flex-end;
+    padding-right: 30px;
 }
 
 
@@ -143,13 +130,27 @@ ul#links {
     max-width: var(--container);
     margin: 0 auto;
     padding: 80px 0px;
+
+   
+}
+
+#titulosecaocertificacao{
+    display: flex;
+    justify-content: center;
 }
 
 #conteudo-certificacao h2{
     font-size: 48px;
     font-weight: 700;
-    margin-left: 95px;
+    
 }
+
+#conteudo-certificacao h2{
+    
+    font-weight: 700;
+    font-size: 48px;
+}
+ 
 
 
 #conteudo-certificacao li.certificacao-item{
@@ -204,13 +205,26 @@ li.certificacao-item p.quando{
     margin: 0 auto;
     padding: 80px 0px;
 }
-
-#conteudo-artigo h2{
-    font-size: 48px;
-    font-weight: 700;
-    margin-left: 95px;
+#titulosecaoartigos{
+    display: flex;
+    
+    justify-content: center;
 }
 
+#conteudo-artigo h2{
+    color: var(--title);
+    font-size: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   
+}
+#conteudo-artigo h2 span{
+    font-size: 24px;
+    display: block;
+   }
 #conteudo-artigo li.artigo-item{
     display: flex;
     font-family: Lato;
@@ -253,6 +267,66 @@ li.artigo-item p.quando{
    
 }
 
+
+
+section#meusvideos{
+    background-color: var(--primary);
+   
+}
+
+#conteudo-aulas{
+    max-width: var(--container);    
+    margin: 0 auto;
+    padding: 154px 0;
+
+    display: flex;
+    align-items: center;
+}
+#conteudo-aulas h2{
+ color: var(--white);
+ font-weight: 700;
+ font-size: 48px;
+}
+#conteudo-aulas h2 span{
+ font-size: 24px;
+ display: block;
+}
+#conteudo-aulas ul#aulas{
+ width: 90%;
+ margin-left: 49px;
+ display: flex;
+
+ overflow-x: auto;
+ white-space: nowrap;
+ 
+}
+
+ul#aulas li.aula{
+    width: 100%;
+    margin-left: 49px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 300px;
+    border-radius: 8px;
+    background-color: var(--white);
+    box-shadow: 0px 36px 20px -24px rgba(0, 0,0,0.2);
+   }
+li.aula:not(:last-child) {
+    margin-right:24px;
+}
+
+
+#video {
+    width: 400px;
+    height: 400px;
+}
+
+
+
+
 section#habilidades{
     background-color: var(--primary);
 }
@@ -267,8 +341,12 @@ section#habilidades{
 }
 #conteudo-habilidades h2{
  color: var(--white);
- font-weight: 700;
  font-size: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 #conteudo-habilidades h2 span{
  font-size: 24px;
@@ -418,16 +496,7 @@ li.curso:not(:last-child) {
     margin-right:24px;
 }
 
-li.curso p{
-    font-family: Lato;
-    font-size:16px;
-    font-weight: 700;
-    text-transform: uppercase;
 
-    color: var(--primary);
-    margin-top: 8px;
-
-}
 
 
 
@@ -435,7 +504,7 @@ li.curso p{
 
 footer{
     
-    background-color: var(--primary);
+    background-color: var(--white);
     
 }
 footer div#conteudo-footer{
@@ -451,7 +520,7 @@ footer div#conteudo-footer{
 }
 
 div#conteudo-footer div#titulo-footer{
-   color: var(--white); 
+   color: var(--title); 
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -469,26 +538,26 @@ div#conteudo-footer form{
    margin-top: 40px;
    max-width: 592px;
    width: 100%;
-
+   box-shadow: inset;
    display: flex;
    flex-direction: column;
 
 }
 div#conteudo-footer form input{
    font-family: Lato;
-   
+   border: 1px solid var(--text);
    height: 67px;
    border-radius: 4px;
-   border: 8px;
+   
  
 
 }
 div#conteudo-footer form textarea{
    font-family: Lato;
  
-
+   border: 1px solid var(--text);
    border-radius: 4px;
-   border: 8px;
+ 
    resize: none;
 
 }
@@ -564,7 +633,7 @@ div#conteudo-footer form input[type = "submit"]{
         list-style: none;
         flex-direction: column;
         justify-content: space-between;
-        margin-top: 10px;
+        margin-top: 30px;
         width: 300px;
         height: 350px;
         border: 1px solid black;
@@ -685,7 +754,7 @@ div#conteudo-footer form input[type = "submit"]{
         
        }
 
-       #conteudo-formacoes{
+    #conteudo-formacoes{
         max-width: var(--container);    
         margin: 0 auto;
         padding: 154px 0;
@@ -715,13 +784,45 @@ div#conteudo-footer form input[type = "submit"]{
         white-space: nowrap;
         
        }
+    #conteudo-aulas{
+        max-width: var(--container);    
+        margin: 0 auto;
+        padding: 154px 0;
+    
+        display: flex;
+        flex-direction: column;
+        
+        
+    }
+    
+    #conteudo-aulas h2{
+        color: var(--white);
+        font-weight: 700;
+        font-size: 48px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 40px;
+       }
+
+       #conteudo-formacoaulases ul#aulas{
+        width: 90%;
+        margin-left: 5px;
+        display: flex;
+       
+        overflow-x: auto;
+        white-space: nowrap;
+        
+       }
 
        main {
         display: block;
+        
     }
+    
 }
 
-@media screen and (max-width:932px) {
+@media screen and (max-width:1015px) {
     #inicio {
         padding: 0 20px;
         height: 450px;
