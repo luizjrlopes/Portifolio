@@ -1,6 +1,6 @@
 const hamburger = document.querySelector(".hamburger");
-const navLinks = document.querySelector(".nav-links");
-const links = document.querySelectorAll(".nav-links li");
+const navLinks = document.querySelector(".links");
+const links = document.querySelectorAll(".links li");
 const sec = document.getElementById ("main");
 
 

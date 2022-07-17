@@ -6,12 +6,18 @@
 
         <title>Portifólio</title>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./style.css" type="text/css">
     </head>
 
     <body>
         <header>
             <nav>
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
                 <ul class="links">
                     
                     
@@ -19,8 +25,8 @@
                         <li><a href="#habilidades">Habilidades</a></li>
                         <li><a href="#publicacoes">Publicações</a></li>
                         <li><a href="#formacoes">Cursos e Formações</a></li>
-                        <li><a href="#artigos">Artigos LinkedIn</a></li>
-                 
+                        <li><a href="#artigo">Artigos LinkedIn</a></li>
+                    
                 </ul>
              </nav>
             
@@ -44,17 +50,19 @@
                 </li>
             
             </ul>
-           
+            <script src="./script.js"> </script>
         </header>
+        <section id="inicio" >
+            <h1>
+                Technical trainer<span> Microsoft Azure</span>
+            </h1>
+            <img id="logoapresentacao" src="../Portifolio/img/fotoportifolioperfil.jpg"
+            width="400px" height="400px" alt="Luiz Júnior">
+           
+        </section>
         <main>
-            <section id="inicio" >
-                <h1>
-                    Technical trainer<span> Microsoft Azure</span>
-                </h1>
-                <img id="logoapresentacao" src="../Portifolio/img/fotoportifolioperfil.jpg"
-                width="400px" height="400px" alt="Luiz Júnior">
-               
-            </section>
+            <div id="grid">
+           
             
             <section id="certificacao" >
                 <div id="conteudo-certificacao">
@@ -343,7 +351,16 @@
                        
                 </div>   
             </section>
-         
+        </div>
+            <aside>
+                <h2>Videos em destaque</h2>
+                <iframe id="video" src="https://www.youtube.com/embed/sEmlfyYGJRc" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+    
+                </iframe>
+            </aside>
         </main>
         <footer>
             <div id="conteudo-footer">
